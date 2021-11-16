@@ -1,0 +1,310 @@
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:100px 75px auto 50px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main "
+    "footer ";
+}
+
+header{
+    grid-area:header;
+       }
+    
+nav{
+    grid-area:nav;
+    }
+    
+main{
+    grid-area:main;
+     }
+    
+footer{
+    grid-area:footer;
+    }
+    
+
+
+
+body{
+    font-family:'oxygen', sans-serif;
+    }
+
+nav a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+        }
+
+figcaption{
+    font-size:1.5em;
+    font-family:'Manrope';
+}
+
+.header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    gap:20px;
+      }
+
+.header img{
+    width:60px;   
+    padding-bottom: 5px;
+            }
+
+.navigation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    background-color:lightblue;
+    height:100%;
+     }
+
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    gap:10px;  
+    padding-bottom:50px; 
+    background-color: rgb(239, 241, 241);
+     }
+
+.main-box{
+    height:600px;
+    }
+    
+.main-box img{
+    width:100%;  
+    height:100%;   
+    object-fit:cover;  
+        }
+
+.main-nieuw{
+    font-size:1.5em;
+    padding-top:40px;
+    font-family:'Manrope';}
+     
+.main-titel-avontuur{
+    font-size:3em;
+    font-weight:bold;
+    }
+
+.main-lees-verder{
+    background-color: rgb(210, 239, 248);
+    padding:10px 20px 10px 20px;
+    border:1px dotted black;
+    font-size:1.5em;
+    margin-top:10px;
+   }
+   
+.main-lees-verder a{
+    text-decoration:none;
+    color:darkblue;
+   }
+
+.main-lees-verder a:hover {
+    color: white;
+    background-color:darkblue;
+    padding:10px 40px 10px 20px;
+       }
+
+.boxlinks{
+    height:500px;
+                 }
+            
+.boxlinks img{
+     width:100%;  
+     height:100%;   
+     object-fit:cover;  
+                }
+
+.boxrechts{
+    font-size:2em;
+    height:70px;
+    padding-top:30px;
+    color:lightblue;
+         }
+
+.midden{
+     margin:10px;
+         }
+
+.midden-tekst{
+    display:flex;
+    justify-content:center;
+    font-size:2em;
+    font-weight:bold;
+    padding:10px 0px 10px 20px;
+    font-family:'Manrope';
+                 }
+
+.avontuur-box{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center; 
+    background-color: rgb(239, 241, 241);
+                  }
+
+.avonturen-avonturen{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;    
+    background-color: white;
+    padding-bottom:100px;
+    padding-top:50px;
+}
+
+.avonturen-avonturen img{
+    margin:0px;
+    padding:0px;
+    width:20em;
+ }
+                   
+.tekst-over{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5em;
+    margin-left:60px;
+    margin-right:60px;
+    font-family:'manrope';
+    padding-top:0px;
+    }
+
+.form{
+   text-align:center;
+   font-size:1.5em;
+}
+
+.form input{
+    width:400px;
+    height:40px;
+    font-size: larger;
+}
+
+.form h3{
+    font-size:1em;
+    margin-bottom:0px;
+    }
+
+textarea{
+    width:400px;
+    height:75px;
+}
+
+button{
+    width:200px;
+    height:40px;
+    font-size:large ;
+}
+
+.footer{
+    font-size:0.5em;
+    background-color:lightblue;
+      }
+
+
+
+
+
+
+@media screen and (min-width: 1024px) { 
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:150px 100px  auto 50px ;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main "
+    "footer ";
+}
+
+header{
+    grid-area:header;
+}
+
+nav{
+    grid-area:nav;
+}
+
+main{
+    grid-area:main;
+}
+
+footer{
+    grid-area:footer;
+}
+
+
+
+.header{
+    gap:60px;
+    height:100%;
+    font-size:2em;
+    justify-content:center;
+   }
+
+.header img{
+    width:4em;
+    padding-bottom:15px;
+}         
+
+.navigation{
+    gap:150px;
+    height:100%;
+    font-size:1.5em ;
+}
+
+.main-box{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    height:100%;
+                 }
+
+.boxlinks{
+    flex-basis:500% ;
+}
+
+.boxrechts{
+    font-size:3em;
+    font-weight:bold;
+    margin-left:6%;
+    flex-basis:200% ;
+    align-self:center;
+    height:75px;
+     }
+
+.avontuur-box{
+    flex-wrap:nowrap;
+    }
+
+.avonturen-kop{
+    padding-top:60px;
+     }
+    
+.avonturen-avonturen{
+    padding-top:50px;
+     }
+
+.main-lees-verder{
+    background-color: rgb(210, 239, 248);
+    padding:20px 50px 20px 50px;
+    border:1px dotted black;
+    font-size:2em;
+    margin-top:10px;
+    }
+
+
+
+    }
